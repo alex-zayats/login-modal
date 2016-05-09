@@ -1,0 +1,169 @@
+@font-face {
+    font-family: FontAwesome;
+    src: url(fontawesome-webfont.ttf);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(Roboto-Regular.ttf);
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+.hidden{
+	-webkit-filter: blur(1px);
+	filter: blur(1px);
+	filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='1');
+	-webkit-transition: 1s -webkit-filter linear;
+	transition: 1s filter linear;
+	opacity: .3;
+	overflow: hidden;
+	max-height: 100%;
+}
+
+.background{
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: black;
+	opacity: .8;
+}
+.modal-wrapper{
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 5;
+	overflow: auto;
+}
+.login{
+	position: relative;
+	font: 12px Roboto, Arial;
+	width: 350px;
+	z-index: 10;
+	margin: 0 auto;
+	margin-top: 10%;
+	background-color: white;
+	border-radius: 5px;
+	padding: 35px 30px 0 30px;
+    box-shadow: 0 0 30px 1px #3E3E3E;
+    box-sizing: border-box;
+}
+.login .fa-close{
+	position: absolute;
+	font-size: 14px;
+	top: 10px;
+	right: 10px;
+	color: #696e7c;
+	cursor: pointer;
+}
+.login input{
+	width: 100%;
+	margin-bottom: 16px;
+	border: 1px solid #dfe3e9;
+	background-color: #f8fafc;
+	border-radius: 5px;
+	line-height: 36px;
+	padding-left: 14px;
+	font-weight: bold;
+}
+.login p.label{
+	font-size: 14px;
+	font-weight: bold;
+	color: #7f8fa4;
+	margin: 0;
+	margin-bottom: 8px;
+}
+.login .button-submit{
+	display: block;
+	width: 100%;
+	background: linear-gradient(to top, #33aa44, #39b54a);
+	border: 1px solid #249533;
+	border-radius: 5px;
+	line-height: 36px;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+	margin-bottom: 30px;
+}
+.login .button-submit:hover{
+	background: linear-gradient(to bottom, #33aa44, #39b54a);	
+}
+.login .social-header{
+	color: #7f8fa4;
+	font-size: 16px;
+	text-shadow: 1px 1px 1px #cacfd8;
+	text-align: center;
+}
+.login .soc-networks{
+	width: 350px;
+	margin-left: -30px;
+	border: none;
+	border-top: 1px solid #dfe3e9;
+	border-bottom: 1px solid #dfe3e9;
+	padding: 10px 25px 15px 25px;
+	box-sizing: border-box;
+	font-size: 0px;
+}
+.login .soc-networks a{
+	display: inline-block;
+	width: 30%;
+	margin: 8px 1.6%;
+	font-size: 16px;
+}
+.login .soc-networks a button{
+	width: 100%;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	line-height: 26px;
+	font-weight: bold;
+	cursor: pointer;
+}
+.login .soc-networks a button.facebook{
+	background: linear-gradient(to top, #3b5998, #4a66a3);
+}
+.login .soc-networks a button.google{
+	background: linear-gradient(to top, #d74533, #dc6050);
+}
+.login .soc-networks a button.twitter{
+	background: linear-gradient(to top, #00acee, #1ab6f2);
+}
+.login .soc-networks a button.steam{
+	background: linear-gradient(to top, #386b47, #4d875c);
+}
+.login .soc-networks a button.twitch{
+	background: linear-gradient(to top, #6441a5, #7250b2);
+}
+.login .soc-networks a button.vk{
+	background: linear-gradient(to top, #1180d3, #2492e4);
+}
+.login .forgot{
+	display: block;
+	width: 350px;
+	margin-left: -30px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+	color: #7f8fa4;
+	background-color: #f8fafc;
+	line-height: 50px;
+	border-radius: 0 0 5px 5px;
+}
+.login .forgot:hover{
+	color: #4d5764;
+	background-color: #f1f2f2;
+}
+.without-acc{
+	font: 15px Arial;
+	color: #aeafb1;
+	text-align: center;
+	margin-top: 20px;
+}
+.without-acc a{
+	color: #aeafb1;
+}
